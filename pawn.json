@@ -1,16 +1,22 @@
 {
-    "user": "ScavengeSurvive",
-    "repo": "personal-space",
-    "entry": "test.pwn",
-    "output": "test.amx",
-    "dependencies": [
-        "sampctl/samp-stdlib",
-        "Southclaws/samp-logger",
-        "pawn-lang/YSI-Includes@5.x",
-        "samp-incognito/samp-streamer-plugin:v2.9.3",
-        "ScavengeSurvive/mathutil"
-    ],
-    "dev_dependencies": [
-        "ScavengeSurvive/test-boilerplate"
-    ]
+	"user": "ScavengeSurvive",
+	"repo": "personal-space",
+	"entry": "test.pwn",
+	"output": "test.amx",
+	"dependencies": [
+		"sampctl/samp-stdlib",
+		"pawn-lang/YSI-Includes@5.x",
+		"samp-incognito/samp-streamer-plugin:v2.9.3",
+		"ScavengeSurvive/mathutil",
+		"Mergevos/samp-logging"
+	],
+	"dev_dependencies": [
+		"ScavengeSurvive/test-boilerplate"
+	],
+	"runtime": {
+		"version": "0.3.7",
+		"mode": "server",
+		"rcon_password": "password",
+		"port": 7777
+	}
 }

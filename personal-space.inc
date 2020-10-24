@@ -10,7 +10,7 @@
 #define _personal_space_included
 
 #include <a_samp>
-#include <logger>
+#include <logging>
 #include <YSI_Data\y_iterate>
 #include <streamer>
 #include <mathutil>
@@ -129,7 +129,7 @@ hook OnPlayerEnterDynArea(playerid, areaid) {
 			}
 
 			if(areaid != Area[data[1]]) {
-				Logger_Err("player area id mismatch");
+				Log_Error("Player area id mismatch", "personal-space.inc", 132);
 				return Y_HOOKS_CONTINUE_RETURN_0;
 			}
 
@@ -175,7 +175,7 @@ hook OnPlayerLeaveDynArea(playerid, areaid) {
 			}
 
 			if(areaid != Area[data[1]]) {
-				Logger_Err("player area id mismatch");
+				Log_Error("Player area id mismatch", "personal-space.inc", 178);
 			} else {
 				CallLocalFunction("OnPlayerLeavePlayer", "dd", playerid, data[1]);
 			}
